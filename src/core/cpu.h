@@ -48,6 +48,7 @@ struct cpu_instruction
     std::vector<u8> bytes;
     std::vector<cpu_register> dests;
     std::vector<cpu_register> sources;
+    std::vector<uop> uops;
     std::string mnemonic;
 
     static constexpr u64 FLAG_STEP_OUT = 1;
